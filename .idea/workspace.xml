@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e9ac30e6-2514-4ccd-9efc-d43a6bc6f078" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/PythonProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comunidadeimpressionadora/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comunidadeimpressionadora/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comunidadeimpressionadora/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comunidadeimpressionadora/routes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comunidadeimpressionadora/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comunidadeimpressionadora/templates/contato.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comunidadeimpressionadora/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comunidadeimpressionadora/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comunidadeimpressionadora/templates/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comunidadeimpressionadora/templates/usuarios.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comunidadeimpressionadora/teste.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2rbZqprVabSam6df56mA3p3IyMY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.base.html.executor": "Run",
+    "JavaScript Debug.home.html.executor": "Run",
+    "Python.__init__.executor": "Run",
+    "Python.forms.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.teste.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Documentos Fabio Henrique/Python Hashtag/Desenvolvimento Web com Python/ProjetoComunidade",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documentos Fabio Henrique\Python Hashtag\Desenvolvimento Web com Python\ProjetoComunidade\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documentos Fabio Henrique\Python Hashtag\Desenvolvimento Web com Python\ProjetoComunidade\comunidadeimpressionadora" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.220" />
+        <option value="bundled-python-sdk-0fc6c617c4bd-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.220" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e9ac30e6-2514-4ccd-9efc-d43a6bc6f078" name="Changes" comment="" />
+      <created>1736829928924</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736829928924</updated>
+      <workItem from="1736829930019" duration="788000" />
+      <workItem from="1736870561805" duration="4071000" />
+      <workItem from="1736884566911" duration="872000" />
+      <workItem from="1736950573021" duration="823000" />
+      <workItem from="1736951717901" duration="80000" />
+      <workItem from="1736974181061" duration="805000" />
+      <workItem from="1736997981394" duration="3505000" />
+      <workItem from="1737062989145" duration="2716000" />
+      <workItem from="1737068045811" duration="383000" />
+      <workItem from="1737146654309" duration="6693000" />
+      <workItem from="1737254338689" duration="757000" />
+      <workItem from="1737295771079" duration="843000" />
+      <workItem from="1737306725426" duration="1484000" />
+      <workItem from="1737309324570" duration="1581000" />
+      <workItem from="1737323113812" duration="9695000" />
+      <workItem from="1737344894758" duration="5045000" />
+      <workItem from="1737379622957" duration="4976000" />
+      <workItem from="1737394282127" duration="345000" />
+      <workItem from="1737421210954" duration="4584000" />
+      <workItem from="1737465263392" duration="9212000" />
+      <workItem from="1737481842972" duration="2226000" />
+      <workItem from="1737493514604" duration="540000" />
+      <workItem from="1737498134776" duration="4265000" />
+      <workItem from="1737509333731" duration="2875000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ProjetoComunidade$forms.coverage" NAME="forms Coverage Results" MODIFIED="1737510931768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comunidadeimpressionadora" />
+    <SUITE FILE_PATH="coverage/PythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1736873116980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ProjetoComunidade$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1737510966340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comunidadeimpressionadora" />
+    <SUITE FILE_PATH="coverage/ProjetoComunidade$teste.coverage" NAME="teste Coverage Results" MODIFIED="1737475225648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comunidadeimpressionadora" />
+    <SUITE FILE_PATH="coverage/ProjetoComunidade$main.coverage" NAME="main Coverage Results" MODIFIED="1737510973757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
