@@ -11,5 +11,8 @@ database = SQLAlchemy(app)
 
 bcrypt = Bcrypt(app) #Fazendo isso só o site consegue descriptografar a senha do usuario
 login_manager = LoginManager(app)
+login_manager.login_view = 'login'
+login_manager.login_message = 'Faça Login Para acessar está página'
+login_manager.login_message_category = 'alert-info'
 
 from comunidadeimpressionadora import routes
