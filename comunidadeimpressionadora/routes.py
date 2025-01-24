@@ -33,7 +33,13 @@ def login():
             login_user(usuario, remember=form_login.lembrar_dados.data)
 
             flash(f'Login feito com sucesso no E-mail: {form_login.email_login.data}', 'alert-success')
-            return redirect(url_for('home'))
+            par_next = request.args.get('next')
+
+            if par_next:
+                return redirect(par_next)
+
+            else:
+                return redirect(url_for('home'))
 
         else:
             flash('Falha no Login. E-mail ou Senha incorretos', 'alert-danger')
@@ -70,7 +76,8 @@ def sair():
 @app.route('/perfil')
 @login_required
 def perfil():
-    return render_template('perfil.html')
+    foto_perfil = url_for('static', filename=f'fotos_perfil/{current_user.foto_perfil}')
+    return render_template('perfil.html', foto_perfil=foto_perfil)
 
 @app.route('/post/criar')
 @login_required
