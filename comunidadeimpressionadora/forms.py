@@ -2,6 +2,7 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, BooleanField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError # DataRequired eh pra deixar o campo obrigatório
 from comunidadeimpressionadora.models import Usuario
+from flask_login import current_user
 
 class FormCriarConta(FlaskForm):
     username = StringField('Nome de Usuário', validators=[DataRequired(), Length(4, 20)])
@@ -27,3 +28,23 @@ class FormLogin(FlaskForm):
     senha_login = PasswordField('Senha', validators=[DataRequired(), Length(6, 15)])
     lembrar_dados = BooleanField('Lembrar Dados de Acesso')
     botao_submit_login = SubmitField('Fazer Login')
+
+
+class FormEditarPerfil(FlaskForm):
+    username = StringField('Nome de Usuário', validators=[DataRequired(), Length(4, 20)])
+    email = StringField('E-mail', validators=[DataRequired(), Email()])
+    botao_submit_editarperfil = SubmitField('Confirmar Edição')
+
+    def validate_email(self, email):
+
+        if current_user.email != email.data:
+            usuario = Usuario.query.filter_by(email=email.data).first()
+            if usuario:
+                raise ValidationError('Ja existe um usuário com esse E-mail. Por favor digite outro')
+
+
+    def validate_username(self, username):
+        if current_user.username != username.data:
+            nome_repitido = Usuario.query.filter_by(username=username.data).first()
+            if nome_repitido:
+                raise ValidationError('Ja existe um usuário com esse Username. Por favor digite outro')
