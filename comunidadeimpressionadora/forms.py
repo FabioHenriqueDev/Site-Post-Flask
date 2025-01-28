@@ -1,4 +1,5 @@
 from flask_wtf import FlaskForm
+from flask_wtf.file import FileField, FileAllowed
 from wtforms import StringField, PasswordField, SubmitField, BooleanField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError # DataRequired eh pra deixar o campo obrigatório
 from comunidadeimpressionadora.models import Usuario
@@ -33,7 +34,16 @@ class FormLogin(FlaskForm):
 class FormEditarPerfil(FlaskForm):
     username = StringField('Nome de Usuário', validators=[DataRequired(), Length(4, 20)])
     email = StringField('E-mail', validators=[DataRequired(), Email()])
+    curso_exel = BooleanField('Exel Impressionador')
+    curso_vba =  BooleanField('VBA Impressionador')
+    curso_powerbi = BooleanField('PowerBI Impressionador')
+    curso_python = BooleanField('Python Impressionador')
+    curso_ppt = BooleanField('Apresentações Impressionadoras')
+    curso_sql = BooleanField('SQL Impressionador')
+    foto_perfil = FileField('Atualizar Foto de Perfil', validators=[FileAllowed(['jpg', 'png', 'jpeg'])])
     botao_submit_editarperfil = SubmitField('Confirmar Edição')
+
+
 
     def validate_email(self, email):
 
@@ -44,7 +54,14 @@ class FormEditarPerfil(FlaskForm):
 
 
     def validate_username(self, username):
+
         if current_user.username != username.data:
             nome_repitido = Usuario.query.filter_by(username=username.data).first()
             if nome_repitido:
                 raise ValidationError('Ja existe um usuário com esse Username. Por favor digite outro')
+
+
+
+
+
+
