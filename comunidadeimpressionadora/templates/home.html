@@ -1,10 +1,23 @@
 {% extends  'base.html' %}
 
 {% block body %}
-    <div class="container">
-        <h1>Hello, World!</h1>
-        <h2>Testantoooo</h2>
-        <p>esse site ta legal!</p>
+    <div class="container mt-3">
+        <h1 style="color: orange">Comunidade Impressionadora</h1>
+        <h2>Posts dos Usuarios:</h2>
+        <hr>
+        {% for post in posts %}
+            <div class="row border mt-4 p-3 meupost">
+                <div class="col col-3">
+                     <div class="image pe-2"> <img src="{{ url_for('static', filename='fotos_perfil/' + post.autor.foto_perfil)  }}" class="rounded" width="200"> </div>
+                </div>
+                <div class="col col-9">
+                    <h3>{{ post.titulo }}</h3>
+                    <p>{{ post.corpo }}</p>
+                </div>
+            </div>
+
+        {% endfor %}
+
     </div>
 
 {% endblock %}
