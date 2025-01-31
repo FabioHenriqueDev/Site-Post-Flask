@@ -1,6 +1,7 @@
 from comunidadeimpressionadora import database, login_manager
 from datetime import datetime
-from flask_login import UserMixin
+from flask_login import UserMixin, current_user
+
 
 @login_manager.user_loader
 def load_usuario(id_usuario):
@@ -16,6 +17,14 @@ class Usuario(database.Model, UserMixin):
     foto_perfil = database.Column(database.String, default='default.jpg')
     posts = database.relationship('Post', backref='autor', lazy=True)
     curso = database.Column(database.String, nullable=False, default='Não Informado') # Default eh um valor padra oque vai ta predefinido no banco de dados
+
+
+    def contar_posts(self):
+       return len(self.posts)
+
+    def post_do_ususario(self):
+       if current_user:
+           return current_user.posts.all()
 
 
 class Post(database.Model):

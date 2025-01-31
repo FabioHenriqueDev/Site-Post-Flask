@@ -196,3 +196,4 @@ def excluir_post(post_id):
 
     else:
         abort(403)
+
