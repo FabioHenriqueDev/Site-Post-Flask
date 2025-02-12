@@ -22,9 +22,7 @@ class Usuario(database.Model, UserMixin):
     def contar_posts(self):
        return len(self.posts)
 
-    def post_do_ususario(self):
-       if current_user:
-           return current_user.posts.all()
+
 
 
 class Post(database.Model):
