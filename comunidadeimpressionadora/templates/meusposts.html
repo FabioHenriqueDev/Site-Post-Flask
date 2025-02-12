@@ -1,0 +1,62 @@
+{% extends  'base.html' %}
+
+{% block body %}
+    <h1 class="container">Meus Posts:</h1>
+
+    {% if current_user %}
+        {% for post in posts %}
+           {% if current_user == post.autor %}
+                <div class="container mt-3">
+                    <div class="row border mt-4 p-3 meupost">
+                            <div class="col col-2">
+                                 <h4 style="color: orange">{{ post.autor.username }}</h4>
+                                <div class="image pe-2"> <img src="{{ url_for('static', filename='fotos_perfil/' + post.autor.foto_perfil)  }}" class="rounded" width="200"> </div>
+                                <div class="row justify-content-center">
+
+
+
+                                        {% for curso in post.autor.curso.split(';') %}
+                                            <button type="button" class="btn btn-success mt-2" disabled>{{ curso }}</button>
+                                        {% endfor %}
+
+                                </div>
+
+                            </div>
+                            <div class="col col-9">
+                                <h3>{{ post.titulo }} <small class="text-muted" style="font-size: 15px">- Data de Criação: <span style="color: cornflowerblue">{{post.data_criacao.strftime('%d/%m/%Y')}}</span>
+
+
+<!--                                    - <b><a href="#form" style="color: dodgerblue">Editar Post</a></b> / <b><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: red">Excluir Post</a></b>-->
+
+                                </small></h3>
+                                <p>{{ post.corpo }}</p>
+                            </div>
+           {% endif %}
+        {% endfor %}
+    {% endif %}
+
+
+<!-- Modal-->
+<!--<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+<!--  <div class="modal-dialog">-->
+<!--    <div class="modal-content">-->
+<!--      <div class="modal-header">-->
+<!--        <h5 class="modal-title" id="exampleModalLabel">Excluir Post</h5>-->
+<!--        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+<!--      </div>-->
+<!--      <div class="modal-body">-->
+<!--        tem certeza que deseja excluir esse post?-->
+<!--      </div>-->
+<!--      <div class="modal-footer">-->
+<!--          <form method="POST" action="{{ url_for('excluir_post', post_id=posts.id) }}">-->
+<!--              <button type="submitpost.html" class="btn btn-danger">Excluir Post</button>-->
+<!--          </form>-->
+
+<!--          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+{% endblock %}

@@ -197,3 +197,11 @@ def excluir_post(post_id):
     else:
         abort(403)
 
+@app.route('/post/meusposts', methods=['GET'])
+@login_required
+def exibir_meus_posts():
+    posts = Post.query.all()
+    form = FormCriarPost()
+    
+
+    return render_template('meusposts.html', posts=posts, form=form)
